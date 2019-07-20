@@ -99,7 +99,7 @@ ConnectionInternal::Ptr ConnectionPoolInternal::createConnection(Request::Ptr pR
         if (Poco::icompare(uri.getScheme(), HttpConstants::Schemes::Https) == 0) {
             // https:
             Poco::Net::Context::Ptr pPocoContext = SslContextCreator::createContext(pContext);
-
+			//创建的是HTTPSClientSession 
             pPocoHttpClientSession = new Poco::Net::HTTPSClientSession(uri.getHost(), uri.getPort(), pPocoContext);
             EASYHTTPCPP_LOG_D(Tag, "create HTTPSClientSession.");
         } else if (Poco::icompare(uri.getScheme(), HttpConstants::Schemes::Http) == 0) {

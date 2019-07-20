@@ -12,7 +12,7 @@
 
 namespace easyhttpcpp {
 namespace common {
-
+  //预处理器去掉NDEBUG就可以打印调试信息了
 #ifndef NDEBUG
 #define EASYHTTPCPP_BASE_LOG_E(pLogger, pTag, pFormat, ...) \
         easyhttpcpp::common::BaseLogger::safeLog(pLogger, pTag, easyhttpcpp::common::LogLevelError, __LINE__, \

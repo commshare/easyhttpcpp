@@ -26,16 +26,23 @@ void dumpResponse(easyhttpcpp::Response::Ptr pResponse)
         std::cout << "Http response body:\n" << pResponse->getBody()->toString() << std::endl;
     }
 }
-
+/*
+怎么支持ssl
+Usage: G:\NNNNET\myeasyhttp\win32\Release\sync_client.exe <url>
+	   Fetches the resource identified by <url> and prints it to the standard output
+HTTP GET url: https://github.com/commshare/poco1.7.9
+Error occurred: EASYHTTPCPP-ERR-100704: SSL error occurred in sendRequest.
+[scheme=https, host=github.com] message=[Error during handshake: The function requested is not supported]
+*/
 int main(int argc, char** argv)
 {
     // need a url to execute easyhttpcpp http client
     if (argc < 2) {
         displayUsage(argv);
-        return 1;
+       // return 1;
     }
-    std::string url = argv[1];
-
+    std::string url// = argv[1];
+	= "https://github.com/commshare/poco1.7.9";
     // HTTP GET the url
     std::cout << "HTTP GET url: " << url << std::endl;
 
@@ -74,3 +81,33 @@ int main(int argc, char** argv)
 
     return 0;
 }
+
+/*去掉NDEBUG
+Usage: G:\NNNNET\myeasyhttp\win32\Release\sync_client.exe <url>
+	   Fetches the resource identified by <url> and prints it to the standard output
+HTTP GET url: https://github.com/commshare/poco1.7.9
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_ConnectionPoolInternal LogLv=D line=29 create. this=[01515FD0]
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_HttpEngine LogLv=D line=216 request is available to cache.
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_HttpFileCache LogLv=D line=56 getMetadata key=06c7c77b7269d0981ff097eea889025c6baa4bc7
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_LruCacheByDataSizeStrategy LogLv=D line=102 get: not found key. [06c7c77b7269d0981ff097eea889025c6baa4bc7]
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_HttpFileCache LogLv=D line=59 getMetadata : [06c7c77b7269d0981ff097eea889025c6baa4bc7] not found in cache.
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_CacheManager LogLv=D line=38 Cache[1] getMetadata : not found.
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_HttpCacheInternal LogLv=D line=121 cache not found.
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_ConnectionPoolInternal LogLv=D line=104 create HTTPSClientSession.
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_ConnectionInternal LogLv=D line=32 create this=[015AE938] url=[https://github.com/commshare/poco1.7.9]
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_ConnectionPoolInternal LogLv=D line=139 createConnection: insert connection=[015AE938]
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_HttpEngine LogLv=D line=419 Poco HTTPRequest:
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_HttpEngine LogLv=D line=420 method=GET
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_HttpEngine LogLv=D line=446 sendRequest: SSL exception. [scheme=https, host=github.com] message=[Error during handshake: The function requested is not supported]
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_HttpEngine LogLv=D line=297 sendRequestAndReceiveResponseWithRetryByConnection: other HttpException. [EASYHTTPCPP-ERR-100704: SSL error occurred in sendRequest. [scheme=https, host=github.com] message=[Error during handshake: The function requested is not supported]]
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_ConnectionPoolInternal LogLv=D line=162 removeConnectionWithoutLock: removed Connection from ConnectionPool. connection=[015AE938]
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_QueuedThreadPool LogLv=D line=131 shutdown was executed
+2019/07/21 03:45:56 [23764:0] EASYHTTPCPP_QueuedThreadPool LogLv=D line=152 shutdownAndJoinAll was executed
+Error occurred: EASYHTTPCPP-ERR-100704: SSL error occurred in sendRequest. [scheme=https, host=github.com] message=[Error during handshake: The function requested is not supported]
+
+G:\NNNNET\myeasyhttp\win32\Release\sync_client.exe (进程 23764)已退出，返回代码为: 0。
+若要在调试停止时自动关闭控制台，请启用“工具”->“选项”->“调试”->“调试停止时自动关闭控制台”。
+按任意键关闭此窗口...
+
+
+*/
