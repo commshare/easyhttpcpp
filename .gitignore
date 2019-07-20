@@ -350,6 +350,8 @@ healthchecksdb
 MigrationBackup/
 
 
+#
+*.db
 ####
 CMakeCache.txt
 CMakeFiles
