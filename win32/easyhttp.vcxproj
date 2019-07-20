@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{236946CC-2772-38C5-946F-C77111DFE029}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>easyhttp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\NNNNET\myeasyhttp\win32\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">easyhttp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">easyhttpmdd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\NNNNET\myeasyhttp\win32\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">easyhttp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">easyhttp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\NNNNET\myeasyhttp\win32\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">easyhttp.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">easyhttp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\NNNNET\myeasyhttp\win32\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">easyhttp.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">easyhttp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\NNNNET\poco_1.7.9\poco\Foundation\include\;G:\NNNNET\myeasyhttp\include;G:\NNNNET\myeasyhttp\src;G:\NNNNET\myeasyhttp\src\windows;G:\NNNNET\myeasyhttp\src\common\windows;G:\NNNNET\myeasyhttp\src\db\windows;G:\NNNNET\myeasyhttp\src\messagedigest\windows;G:\NNNNET\myeasyhttp\src\executorservice\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY=1;EASYHTTPCPP_DLL;PACKAGE_VERSION=2.0.0;PACKAGE_VERSION_MAJOR=2;PACKAGE_VERSION_MINOR=0;PACKAGE_VERSION_PATCH=0;PACKAGE_VERSION_EXT=;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY=1;EASYHTTPCPP_DLL;PACKAGE_VERSION=2.0.0;PACKAGE_VERSION_MAJOR=2;PACKAGE_VERSION_MINOR=0;PACKAGE_VERSION_PATCH=0;PACKAGE_VERSION_EXT=;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\NNNNET\myeasyhttp\include;G:\NNNNET\myeasyhttp\src;G:\NNNNET\myeasyhttp\src\windows;G:\NNNNET\myeasyhttp\src\common\windows;G:\NNNNET\myeasyhttp\src\db\windows;G:\NNNNET\myeasyhttp\src\messagedigest\windows;G:\NNNNET\myeasyhttp\src\executorservice\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\NNNNET\myeasyhttp\include;G:\NNNNET\myeasyhttp\src;G:\NNNNET\myeasyhttp\src\windows;G:\NNNNET\myeasyhttp\src\common\windows;G:\NNNNET\myeasyhttp\src\db\windows;G:\NNNNET\myeasyhttp\src\messagedigest\windows;G:\NNNNET\myeasyhttp\src\executorservice\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\NNNNET\poco_1.7.9\poco\JSON\include;G:\NNNNET\poco_1.7.9\poco\NetSSL_Win\include;G:\NNNNET\poco_1.7.9\poco\Util\include;G:\NNNNET\poco_1.7.9\poco\Net\include;G:\NNNNET\poco_1.7.9\poco\Data\SQLite\include;G:\NNNNET\poco_1.7.9\poco\Data\include;G:\NNNNET\poco_1.7.9\poco\Foundation\include\;G:\NNNNET\myeasyhttp\include;G:\NNNNET\myeasyhttp\src;G:\NNNNET\myeasyhttp\src\windows;G:\NNNNET\myeasyhttp\src\common\windows;G:\NNNNET\myeasyhttp\src\db\windows;G:\NNNNET\myeasyhttp\src\messagedigest\windows;G:\NNNNET\myeasyhttp\src\executorservice\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY=1;EASYHTTPCPP_DLL;PACKAGE_VERSION=2.0.0;PACKAGE_VERSION_MAJOR=2;PACKAGE_VERSION_MINOR=0;PACKAGE_VERSION_PATCH=0;PACKAGE_VERSION_EXT=1.7.9;CMAKE_INTDIR="Release";EASYHTTPCPP_API_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY=1;EASYHTTPCPP_DLL;PACKAGE_VERSION=2.0.0;PACKAGE_VERSION_MAJOR=2;PACKAGE_VERSION_MINOR=0;PACKAGE_VERSION_PATCH=0;PACKAGE_VERSION_EXT=;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\NNNNET\myeasyhttp\include;G:\NNNNET\myeasyhttp\src;G:\NNNNET\myeasyhttp\src\windows;G:\NNNNET\myeasyhttp\src\common\windows;G:\NNNNET\myeasyhttp\src\db\windows;G:\NNNNET\myeasyhttp\src\messagedigest\windows;G:\NNNNET\myeasyhttp\src\executorservice\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\NNNNET\myeasyhttp\include;G:\NNNNET\myeasyhttp\src;G:\NNNNET\myeasyhttp\src\windows;G:\NNNNET\myeasyhttp\src\common\windows;G:\NNNNET\myeasyhttp\src\db\windows;G:\NNNNET\myeasyhttp\src\messagedigest\windows;G:\NNNNET\myeasyhttp\src\executorservice\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\NNNNET\myeasyhttp\include;G:\NNNNET\myeasyhttp\src;G:\NNNNET\myeasyhttp\src\windows;G:\NNNNET\myeasyhttp\src\common\windows;G:\NNNNET\myeasyhttp\src\db\windows;G:\NNNNET\myeasyhttp\src\messagedigest\windows;G:\NNNNET\myeasyhttp\src\executorservice\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY=1;EASYHTTPCPP_DLL;PACKAGE_VERSION=2.0.0;PACKAGE_VERSION_MAJOR=2;PACKAGE_VERSION_MINOR=0;PACKAGE_VERSION_PATCH=0;PACKAGE_VERSION_EXT=;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY=1;EASYHTTPCPP_DLL;PACKAGE_VERSION=2.0.0;PACKAGE_VERSION_MAJOR=2;PACKAGE_VERSION_MINOR=0;PACKAGE_VERSION_PATCH=0;PACKAGE_VERSION_EXT=;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\NNNNET\myeasyhttp\include;G:\NNNNET\myeasyhttp\src;G:\NNNNET\myeasyhttp\src\windows;G:\NNNNET\myeasyhttp\src\common\windows;G:\NNNNET\myeasyhttp\src\db\windows;G:\NNNNET\myeasyhttp\src\messagedigest\windows;G:\NNNNET\myeasyhttp\src\executorservice\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\NNNNET\myeasyhttp\include;G:\NNNNET\myeasyhttp\src;G:\NNNNET\myeasyhttp\src\windows;G:\NNNNET\myeasyhttp\src\common\windows;G:\NNNNET\myeasyhttp\src\db\windows;G:\NNNNET\myeasyhttp\src\messagedigest\windows;G:\NNNNET\myeasyhttp\src\executorservice\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\NNNNET\myeasyhttp\include;G:\NNNNET\myeasyhttp\src;G:\NNNNET\myeasyhttp\src\windows;G:\NNNNET\myeasyhttp\src\common\windows;G:\NNNNET\myeasyhttp\src\db\windows;G:\NNNNET\myeasyhttp\src\messagedigest\windows;G:\NNNNET\myeasyhttp\src\executorservice\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY=1;EASYHTTPCPP_DLL;PACKAGE_VERSION=2.0.0;PACKAGE_VERSION_MAJOR=2;PACKAGE_VERSION_MINOR=0;PACKAGE_VERSION_PATCH=0;PACKAGE_VERSION_EXT=;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY=1;_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY=1;EASYHTTPCPP_DLL;PACKAGE_VERSION=2.0.0;PACKAGE_VERSION_MAJOR=2;PACKAGE_VERSION_MINOR=0;PACKAGE_VERSION_PATCH=0;PACKAGE_VERSION_EXT=;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\NNNNET\myeasyhttp\include;G:\NNNNET\myeasyhttp\src;G:\NNNNET\myeasyhttp\src\windows;G:\NNNNET\myeasyhttp\src\common\windows;G:\NNNNET\myeasyhttp\src\db\windows;G:\NNNNET\myeasyhttp\src\messagedigest\windows;G:\NNNNET\myeasyhttp\src\executorservice\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\NNNNET\myeasyhttp\include;G:\NNNNET\myeasyhttp\src;G:\NNNNET\myeasyhttp\src\windows;G:\NNNNET\myeasyhttp\src\common\windows;G:\NNNNET\myeasyhttp\src\db\windows;G:\NNNNET\myeasyhttp\src\messagedigest\windows;G:\NNNNET\myeasyhttp\src\executorservice\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\NNNNET\myeasyhttp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule G:/NNNNET/myeasyhttp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SG:/NNNNET/myeasyhttp -BG:/NNNNET/myeasyhttp/win32 --check-stamp-file G:/NNNNET/myeasyhttp/win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeFindDependencyMacro.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;G:\NNNNET\myeasyhttp\cmake\DefineProjectConfig.cmake.in;G:\NNNNET\myeasyhttp\cmake\DefineProjectMacros.cmake;G:\NNNNET\myeasyhttp\cmake\DefineProjectVersion.cmake;G:\NNNNET\myeasyhttp\cmake\WindowsToolchain.cmake;G:\NNNNET\myeasyhttp\cmake\easyhttpcppeasyhttpConfig.cmake.in;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeCCompiler.cmake;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeCXXCompiler.cmake;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeRCCompiler.cmake;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeSystem.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataSQLiteConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataSQLiteConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataSQLiteTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoFoundationConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoFoundationConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoFoundationTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoJSONConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoJSONConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoJSONTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetSSLWinConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetSSLWinConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetSSLWinTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoUtilConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoUtilConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoUtilTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoXMLConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoXMLConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoXMLTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\NNNNET\myeasyhttp\win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule G:/NNNNET/myeasyhttp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SG:/NNNNET/myeasyhttp -BG:/NNNNET/myeasyhttp/win32 --check-stamp-file G:/NNNNET/myeasyhttp/win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeFindDependencyMacro.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;G:\NNNNET\myeasyhttp\cmake\DefineProjectConfig.cmake.in;G:\NNNNET\myeasyhttp\cmake\DefineProjectMacros.cmake;G:\NNNNET\myeasyhttp\cmake\DefineProjectVersion.cmake;G:\NNNNET\myeasyhttp\cmake\WindowsToolchain.cmake;G:\NNNNET\myeasyhttp\cmake\easyhttpcppeasyhttpConfig.cmake.in;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeCCompiler.cmake;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeCXXCompiler.cmake;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeRCCompiler.cmake;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeSystem.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataSQLiteConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataSQLiteConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataSQLiteTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoFoundationConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoFoundationConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoFoundationTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoJSONConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoJSONConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoJSONTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetSSLWinConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetSSLWinConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetSSLWinTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoUtilConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoUtilConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoUtilTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoXMLConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoXMLConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoXMLTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\NNNNET\myeasyhttp\win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule G:/NNNNET/myeasyhttp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SG:/NNNNET/myeasyhttp -BG:/NNNNET/myeasyhttp/win32 --check-stamp-file G:/NNNNET/myeasyhttp/win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeFindDependencyMacro.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;G:\NNNNET\myeasyhttp\cmake\DefineProjectConfig.cmake.in;G:\NNNNET\myeasyhttp\cmake\DefineProjectMacros.cmake;G:\NNNNET\myeasyhttp\cmake\DefineProjectVersion.cmake;G:\NNNNET\myeasyhttp\cmake\WindowsToolchain.cmake;G:\NNNNET\myeasyhttp\cmake\easyhttpcppeasyhttpConfig.cmake.in;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeCCompiler.cmake;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeCXXCompiler.cmake;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeRCCompiler.cmake;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeSystem.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataSQLiteConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataSQLiteConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataSQLiteTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoFoundationConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoFoundationConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoFoundationTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoJSONConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoJSONConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoJSONTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetSSLWinConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetSSLWinConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetSSLWinTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoUtilConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoUtilConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoUtilTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoXMLConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoXMLConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoXMLTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\NNNNET\myeasyhttp\win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule G:/NNNNET/myeasyhttp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SG:/NNNNET/myeasyhttp -BG:/NNNNET/myeasyhttp/win32 --check-stamp-file G:/NNNNET/myeasyhttp/win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeFindDependencyMacro.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;G:\NNNNET\myeasyhttp\cmake\DefineProjectConfig.cmake.in;G:\NNNNET\myeasyhttp\cmake\DefineProjectMacros.cmake;G:\NNNNET\myeasyhttp\cmake\DefineProjectVersion.cmake;G:\NNNNET\myeasyhttp\cmake\WindowsToolchain.cmake;G:\NNNNET\myeasyhttp\cmake\easyhttpcppeasyhttpConfig.cmake.in;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeCCompiler.cmake;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeCXXCompiler.cmake;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeRCCompiler.cmake;G:\NNNNET\myeasyhttp\win32\CMakeFiles\3.15.0-rc4\CMakeSystem.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataSQLiteConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataSQLiteConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataSQLiteTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoDataTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoFoundationConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoFoundationConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoFoundationTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoJSONConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoJSONConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoJSONTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetSSLWinConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetSSLWinConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetSSLWinTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoNetTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoUtilConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoUtilConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoUtilTargets.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoXMLConfig.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoXMLConfigVersion.cmake;G:\NNNNET\poco_1.7.9\poco\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\Poco\PocoXMLTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\NNNNET\myeasyhttp\win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\AtomicBool.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\BaseException.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\BaseLogger.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\ByteArrayBuffer.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\CacheInfoWithDataSize.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\CacheManager.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\CacheMetadata.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\ColorConsoleChannelCreator.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\CommonException.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\CoreException.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\CoreLogger.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\DefaultLogWriter.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\ExceptionConstants.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\FileUtil.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\LruCacheByDataSizeStrategy.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\ProjectVersion.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\StringUtil.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\windows\ColorConsoleChannelCreatorImpl.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\db\ContentValues.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\db\SqlException.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\db\SqliteCursor.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\db\SqliteDatabase.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\db\SqliteOpenHelper.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\db\SqliteQueryBuilder.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\messagedigest\DigestConstants.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\messagedigest\DigestEngine.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\messagedigest\DigestUtil.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\messagedigest\MessageDigestException.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\messagedigest\windows\DigestEngineImpl.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\messagedigest\windows\DigestUtilImpl.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\executorservice\BoundBlockingQueue.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\executorservice\ExecutorServiceException.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\executorservice\QueuedThreadPool.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\executorservice\RunnableWorker.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\executorservice\Task.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\executorservice\UnboundBlockingQueue.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\CacheControl.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\CallInterceptorChain.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\CallInternal.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\CallLoggingInterceptor.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ConnectionInternal.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ConnectionPool.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ConnectionPoolInternal.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\EasyHttp.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\EasyHttpContext.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\EasyHttpInternal.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\Headers.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpAsyncExecutionTask.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpCache.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpCacheDatabase.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpCacheInfo.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpCacheInternal.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpCacheMetadata.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpCacheStrategy.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpConstants.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpEngine.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpException.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpExecutionTaskManager.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpFileCache.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpLruCacheStrategy.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpRequestExecutor.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpUtil.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\KeepAliveTimeoutTask.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\LoggingInterceptorFactory.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\MediaType.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\NetworkInterceptorChain.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\NetworkLoggingInterceptor.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\Proxy.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\Request.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBody.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyForByteBuffer.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyForSharedPtrByteBuffer.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyForSharedPtrStream.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyForSharedPtrString.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyForStream.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyForString.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyUtil.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\Response.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ResponseBody.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ResponseBodyStreamFromCache.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ResponseBodyStreamInternal.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ResponseBodyStreamWithCaching.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ResponseBodyStreamWithoutCaching.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\SslContextCreator.cpp" />
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\windows\SslContextCreatorImpl.cpp" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\CacheControl.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Call.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Connection.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\ConnectionPool.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\CrlCheckPolicy.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\EasyHttp.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Headers.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpAuthenticator.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpAuthenticatorCallback.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpAuthenticatorTypeDefs.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpCache.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpCacheUpdateCheckPolicy.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpConstants.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpException.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpExports.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Interceptor.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\LoggingInterceptor.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\LoggingInterceptorFactory.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\MediaType.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Proxy.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Request.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\RequestBody.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Response.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\ResponseBody.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\ResponseBodyStream.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\ResponseCallback.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\AtomicBool.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\BaseException.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\BaseLogger.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\ByteArrayBuffer.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\Cache.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CacheInfoWithDataSize.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CacheManager.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CacheMetadata.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CacheStrategy.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CacheStrategyListener.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CommonException.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CommonExports.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CommonMacros.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CoreException.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CoreExports.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CoreLogger.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\DefaultLogWriter.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\ExceptionConstants.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\FileUtil.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\Future.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\LogLevel.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\LogWriter.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\LruCacheByDataSizeStrategy.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\OpenSslInitializer.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\ProjectVersion.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\RefCountedRunnable.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\StringUtil.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\Typedef.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\AutoSqliteCursor.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\AutoSqliteDatabase.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\AutoSqliteTransaction.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\ContentValues.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\Cursor.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\DbExports.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\SqlException.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\SqliteConflictAlgorithm.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\SqliteCursor.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\SqliteDatabase.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\SqliteOpenHelper.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\SqliteQueryBuilder.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\BlockingQueue.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\BoundBlockingQueue.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\ExecutorServiceException.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\ExecutorServiceExports.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\FutureTask.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\QueuedThreadPool.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\ScheduledFutureTask.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\Task.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\UnboundBlockingQueue.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\messagedigest\DigestConstants.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\messagedigest\DigestEngine.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\messagedigest\DigestUtil.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\messagedigest\MessageDigestException.h" />
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\messagedigest\MessageDigestExports.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\NNNNET\myeasyhttp\win32\ZERO_CHECK.vcxproj">
+      <Project>{9F679F66-4B03-3CE4-9DB8-6547026A0CE8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

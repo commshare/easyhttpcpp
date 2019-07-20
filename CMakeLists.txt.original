@@ -9,18 +9,15 @@ endif ()
 
 project(easyhttpcpp)
 
-#configure的时候提示信息多一点？
-option(EASYHTTPCPP_VERBOSE_MESSAGES "Enable informational messages during configure" ON)
+option(EASYHTTPCPP_VERBOSE_MESSAGES "Enable informational messages during configure" OFF)
 
-###设置cmake的编译输出目录
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-###查找cmake 模块的目录
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 if (WIN32)
-    if (NOT FORCE_SHAREDLIB) ###不 强制编译共享库，那么要加md
+    if (NOT FORCE_SHAREDLIB)
         set(STATIC_POSTFIX "md" CACHE STRING "Set static library postfix" FORCE)
     else ()
         set(STATIC_POSTFIX "" CACHE STRING "Set static library postfix" FORCE)
@@ -28,12 +25,9 @@ if (WIN32)
 else ()
     set(STATIC_POSTFIX "" CACHE STRING "Set static library postfix" FORCE)
 endif ()
-
-##对于debug类型，加一个d到库名字后面
 # For Debug build types, append a "d" to the library names.
 set(CMAKE_DEBUG_POSTFIX "${STATIC_POSTFIX}d" CACHE STRING "Set debug library postfix" FORCE)
 
-###如果没有设置默认的build type，那么设置为Release
 # set default build type to Release
 if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release CACHE STRING "Project's CMAKE_BUILD_TYPE" FORCE)
@@ -45,24 +39,22 @@ include(DefineProjectMacros)
 #############################################################
 # various library configurations
 
-###关闭测试程序
 option(ENABLE_TESTS
        "Set to OFF|ON (default is ON) to control building tests (requires GTest)" OFF)
-###不要文档
+
 option(ENABLE_DOCS
        "Set to OFF|ON (default is ON) to control building api docs (requires Doxygen)" OFF)
-##不强制输出共享库
+
 option(FORCE_SHAREDLIB
        "Set to OFF|ON (default is ON) to force build project as SHARED library" OFF)
 
-###动态库
 if (FORCE_SHAREDLIB)
     set(CMAKE_POSITION_INDEPENDENT_CODE ON)
     set(LIB_MODE SHARED)
     if (EASYHTTPCPP_VERBOSE_MESSAGES)
         message(STATUS "Building shared ${CMAKE_PROJECT_NAME} libraries")
     endif ()
-else ()   ##静态库
+else ()
     set(LIB_MODE STATIC)
     if (EASYHTTPCPP_VERBOSE_MESSAGES)
         message(STATUS "Building static ${CMAKE_PROJECT_NAME} libraries")
@@ -71,20 +63,17 @@ endif ()
 
 #############################################################
 # build & install library target
-##编译的库名字easyhttp
+
 set(LIBRARY_TARGET_NAME "easyhttp")
 
-###依赖库，这个CONFIG是什么，win32不需要openssl
-set(Poco_DIR "G:\\NNNNET\\poco_1.7.9\\poco\\_build_win32_NETSSLWIN_SQLLITE_JSON_XML_no_example\\Poco")
 # dependent libraries
 if (WIN32)
-    find_package(Poco REQUIRED Foundation Data DataSQLite Net NetSSLWIN CONFIG)
+    find_package(Poco REQUIRED Foundation Data DataSQLite Net NetSSLWin CONFIG)
 else ()
     find_package(OpenSSL REQUIRED)
     find_package(Poco REQUIRED Foundation Data DataSQLite Net NetSSL Crypto CONFIG)
 endif ()
 
-####平台相关源码
 # sources
 if (WIN32)
     set(PLATFORM_SPECIFIC_SRC_DIR_NAME "windows")
@@ -93,7 +82,6 @@ else ()
     set(PLATFORM_SPECIFIC_SRC_DIR_NAME "unix")
 endif ()
 
-#####其他的公共代码
 file(GLOB COMMON_SRCS_G "src/common/*.cpp")
 file(GLOB COMMON_SRCS_PLAT_G "src/common/${PLATFORM_SPECIFIC_SRC_DIR_NAME}/*.cpp")
 file(GLOB DB_SRCS_G "src/db/*.cpp")
@@ -121,13 +109,11 @@ set_target_properties(${LIBRARY_TARGET_NAME}
                       OUTPUT_NAME ${LIBRARY_TARGET_NAME}
                       )
 
-
-#### 链接库，这俩  OpenSSL::SSL OpenSSL::Crypto  是怎么来？？？？
-#target_link_libraries(${LIBRARY_TARGET_NAME}
-#                      Poco::Foundation
-#                      Poco::Data Poco::DataSQLite
-#                      Poco::Net Poco::NetSSL Poco::Crypto
-#                      OpenSSL::SSL OpenSSL::Crypto)
+target_link_libraries(${LIBRARY_TARGET_NAME}
+                      Poco::Foundation
+                      Poco::Data Poco::DataSQLite
+                      Poco::Net Poco::NetSSL Poco::Crypto
+                      OpenSSL::SSL OpenSSL::Crypto)
 
 target_include_directories(${LIBRARY_TARGET_NAME}
                            PUBLIC
@@ -142,7 +128,6 @@ target_include_directories(${LIBRARY_TARGET_NAME}
                            )
 
 easyhttpcpp_install(${LIBRARY_TARGET_NAME})
-#####这个啥？
 easyhttpcpp_generate_package(${LIBRARY_TARGET_NAME})
 
 #############################################################
@@ -183,7 +168,7 @@ endif ()
 
 #############################################################
 # cmake config files
-####cmake的配置文件是干啥的？
+
 include(CMakePackageConfigHelpers)
 write_basic_package_version_file(
         "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}/${CMAKE_PROJECT_NAME}ConfigVersion.cmake"

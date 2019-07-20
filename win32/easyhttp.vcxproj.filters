@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\AtomicBool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\BaseException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\BaseLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\ByteArrayBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\CacheInfoWithDataSize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\CacheManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\CacheMetadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\ColorConsoleChannelCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\CommonException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\CoreException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\CoreLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\DefaultLogWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\ExceptionConstants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\FileUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\LruCacheByDataSizeStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\ProjectVersion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\StringUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\common\windows\ColorConsoleChannelCreatorImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\db\ContentValues.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\db\SqlException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\db\SqliteCursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\db\SqliteDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\db\SqliteOpenHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\db\SqliteQueryBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\messagedigest\DigestConstants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\messagedigest\DigestEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\messagedigest\DigestUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\messagedigest\MessageDigestException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\messagedigest\windows\DigestEngineImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\messagedigest\windows\DigestUtilImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\executorservice\BoundBlockingQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\executorservice\ExecutorServiceException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\executorservice\QueuedThreadPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\executorservice\RunnableWorker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\executorservice\Task.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\executorservice\UnboundBlockingQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\CacheControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\CallInterceptorChain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\CallInternal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\CallLoggingInterceptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ConnectionInternal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ConnectionPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ConnectionPoolInternal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\EasyHttp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\EasyHttpContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\EasyHttpInternal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\Headers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpAsyncExecutionTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpCacheDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpCacheInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpCacheInternal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpCacheMetadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpCacheStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpConstants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpExecutionTaskManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpFileCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpLruCacheStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpRequestExecutor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\HttpUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\KeepAliveTimeoutTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\LoggingInterceptorFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\MediaType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\NetworkInterceptorChain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\NetworkLoggingInterceptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\Proxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\Request.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyForByteBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyForSharedPtrByteBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyForSharedPtrStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyForSharedPtrString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyForStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyForString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\RequestBodyUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\Response.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ResponseBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ResponseBodyStreamFromCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ResponseBodyStreamInternal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ResponseBodyStreamWithCaching.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\ResponseBodyStreamWithoutCaching.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\SslContextCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\NNNNET\myeasyhttp\src\windows\SslContextCreatorImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\CacheControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Call.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\ConnectionPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\CrlCheckPolicy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\EasyHttp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpAuthenticator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpAuthenticatorCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpAuthenticatorTypeDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpCacheUpdateCheckPolicy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\HttpExports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Interceptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\LoggingInterceptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\LoggingInterceptorFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\MediaType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Proxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Request.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\RequestBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\Response.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\ResponseBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\ResponseBodyStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\ResponseCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\AtomicBool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\BaseException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\BaseLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\ByteArrayBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\Cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CacheInfoWithDataSize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CacheManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CacheMetadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CacheStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CacheStrategyListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CommonException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CommonExports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CommonMacros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CoreException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CoreExports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\CoreLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\DefaultLogWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\ExceptionConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\FileUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\Future.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\LogLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\LogWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\LruCacheByDataSizeStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\OpenSslInitializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\ProjectVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\RefCountedRunnable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\StringUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\common\Typedef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\AutoSqliteCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\AutoSqliteDatabase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\AutoSqliteTransaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\ContentValues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\Cursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\DbExports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\SqlException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\SqliteConflictAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\SqliteCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\SqliteDatabase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\SqliteOpenHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\db\SqliteQueryBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\BlockingQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\BoundBlockingQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\ExecutorServiceException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\ExecutorServiceExports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\FutureTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\QueuedThreadPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\ScheduledFutureTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\Task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\executorservice\UnboundBlockingQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\messagedigest\DigestConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\messagedigest\DigestEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\messagedigest\DigestUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\messagedigest\MessageDigestException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\NNNNET\myeasyhttp\include\easyhttpcpp\messagedigest\MessageDigestExports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\NNNNET\myeasyhttp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A66EF30B-21EC-3B32-A420-3E253024B3B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BD4EDFA9-EF04-3B36-9935-E1D586BF538D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
